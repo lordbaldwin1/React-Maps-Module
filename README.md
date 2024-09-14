@@ -1,4 +1,4 @@
-# Team Sparkle Motion EV Maps Module
+# Team Sparkle Motion EV Maps Module (Screenshots of Website at End)
 Members: Danny Love, Teresa Booth, Bruce Cosgrove, Meghan Leicht, Zachary Springer
 
 ## Link to React Native Mobile Version

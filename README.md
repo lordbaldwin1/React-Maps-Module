@@ -1,6 +1,9 @@
 # Team Sparkle Motion EV Maps Module
 Members: Danny Love, Teresa Booth, Bruce Cosgrove, Meghan Leicht, Zachary Springer
 
+## Link to React Native Mobile Version
+https://github.com/lordbaldwin1/ReactNative-Maps-Module
+
 ## Backend
 
 The backend of this project is a placeholder implementation designed to simulate the technology stack used by the main development team. It serves as a stand-in backend, enabling the development and testing of the frontend alongside the Ranger EV project without requiring access to their proprietary codebase.

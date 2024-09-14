@@ -1,0 +1,45 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "name": "Team Sparkle Motion Web Application",
+  "excludeExternals": true,
+  "externalPattern": ["**/node_modules/**"],
+  "exclude": [
+    "**/node_modules/**",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.stories.tsx",
+    "**/*.d.ts"
+  ],
+  "theme": "default",
+  "includeVersion": true,
+  "categorizeByGroup": true,
+  "categoryOrder": [
+    "Redux Store",
+    "Components",
+    "Services",
+    "Utilities",
+    "Types",
+    "*"
+  ],
+  "searchInComments": true,
+  "plugin": ["typedoc-plugin-rename-defaults"],
+  "readme": "../README.md",
+  "tsconfig": "tsconfig.json",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeInternal": true,
+  "disableSources": false,
+  "gitRevision": "master",
+  "gitRemote": "origin",
+  "sort": ["required-first", "source-order"],
+  "validation": {
+    "invalidLink": false,
+    "notExported": true
+  },
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}

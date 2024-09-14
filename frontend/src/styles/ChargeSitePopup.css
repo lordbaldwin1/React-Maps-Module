@@ -1,0 +1,100 @@
+@import "./global.css";
+
+/* The popup itself */
+div.popup.container {
+  /* Position in bottom center. */
+  /* TODO: please make this better */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 10px auto;
+
+  /* Make it centered, with a max width of 500px */
+  width: calc(100vw - 20px);
+  max-width: 500px;
+  justify-self: center;
+
+  /* Make the children a vertical, borderless, table. */
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1001; /* Leaflet map is at 1000. */
+  background-color: #383737;
+
+  font-family: var(--font-poppins);
+  text-align: center;
+  text-wrap: nowrap;
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:
+    rgba(14, 30, 37, 0.24) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.48) 0px 2px 16px 0px;
+
+  transform: translateY(100%);
+  opacity: 1;
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
+.popup.container.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.popup.container.closing {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+/* Popup title */
+.popup h2 {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+/* Divider between title and content */
+.popup hr {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+/* Group of a label and its value. */
+.popup div.info {
+  display: flex;
+  margin: -10px 0px;
+}
+
+/* Labels i.e. Address/Private Status/Reserved Status */
+.popup h3 {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 13px;
+  padding-right: 4px;
+}
+
+/* Values */
+.popup p {
+  color: #f5f5f5;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Show route button */
+.popup button.show-route {
+  margin-top: 5px;
+  background: #ffc00e;
+  border-radius: 10px;
+  max-width: 160px;
+  width: 100%;
+  padding: 8px;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  color: #000000;
+  left: 50%;
+}

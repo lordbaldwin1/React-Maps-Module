@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #f5f5f5;
+  --text-color-muted: #bebebe;
+  --searchbar-color: #4c4c4c;
+  --border-color: #707070;
+  --hover-color: #646464;
+}
+
+.leaflet-control-geosearch form,
+.leaflet-control-geosearch form .reset {
+  background-color: var(--searchbar-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.leaflet-control-geosearch form .reset {
+  color: var(--text-color-muted);
+  padding: 6px 20px;
+}
+
+.leaflet-control-geosearch form .reset:hover {
+  background-color: transparent;
+}
+
+.leaflet-control-geosearch form .reset:focus {
+  outline: none;
+}
+
+.leaflet-control-geosearch form {
+  padding: 0;
+}
+
+.leaflet-control-geosearch form input,
+.leaflet-control-geosearch .results {
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.leaflet-control-geosearch form input {
+  margin: 6px 0;
+}
+
+.leaflet-control-geosearch .results.active {
+  border-top: 1px solid var(--border-color);
+}
+
+.leaflet-control-geosearch .results div[data-key] {
+  padding: 6px 8px;
+  margin: 2px 10px;
+}
+
+.leaflet-control-geosearch .results > .active,
+.leaflet-control-geosearch .results > :hover {
+  background-color: var(--hover-color);
+  border: var(--hover-color);
+  border-radius: 10px;
+}
+
+.leaflet-control-geosearch form input::placeholder {
+  color: var(--text-color-muted);
+}
+
+/* ~~~~~~~~~~~ Searchbar Popup ~~~~~~~~~~~*/
+.custom-popup {
+  color: var(--text-color);
+  background: #383737;
+}

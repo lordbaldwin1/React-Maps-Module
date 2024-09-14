@@ -1,5 +1,7 @@
 # The Official Team Sparkle Motion Repository 🎉
 
+Members: Danny Love, Zachary Springer, Meghan Leicht, Teresa Booth, Bruce Cosgrove
+
 ## Getting started
 
 1. Go through all the [preliminaries](#preliminaries).

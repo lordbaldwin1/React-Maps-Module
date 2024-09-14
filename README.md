@@ -1,4 +1,4 @@
-# Team Sparkle Motion EV Mapping Module
+# Team Sparkle Motion EV Maps Module
 Members: Danny Love, Teresa Booth, Bruce Cosgrove, Meghan Leicht, Zachary Springer
 
 ## Backend
